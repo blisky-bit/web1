@@ -23,13 +23,12 @@
 }
 
 .other-photos-section .photo {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100% !important; /* !important 추가 */
+    aspect-ratio: 3 / 4 !important; /* !important 추가 */
+    object-fit: cover !important; /* !important 추가 */
+    border-radius: 10px !important; /* !important 추가 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* !important 추가 */
 }
-
 
 .photo-caption {
     margin-top: 10px;
@@ -37,3 +36,4 @@
     color: #555;
     text-align: center;
 }
+
