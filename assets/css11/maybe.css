@@ -1,0 +1,46 @@
+/* Intro 텍스트 스타일 */
+#intro h1 {
+    font-size: 4em; /* 'This is'와 'Belife' 크기 조정 */
+    line-height: 1.2;
+}
+
+#intro p {
+    font-size: 1.2em; /* 'Let's Love Animals' 크기 조정 */
+    margin-top: 10px;
+}
+
+/* 버튼 아이콘 스타일 */
+button.icon {
+    font-size: 2em; /* 버튼 아이콘 크기 조정 */
+    padding: 10px;
+}
+
+/* 스크롤 시 효과 */
+.fade-out {
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+/* 네비게이션 바 */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav ul.links {
+    display: flex;
+    list-style: none;
+}
+
+#nav ul.links li {
+    margin-right: 20px;
+}
+
+#nav .icons {
+    display: flex;
+}
+
+#nav .icons li {
+    margin-left: 20px;
+}
