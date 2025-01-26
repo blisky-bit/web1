@@ -22,13 +22,14 @@
     max-width: 200px;
 }
 
-.photo {
+.other-photos-section .photo {
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .photo-caption {
     margin-top: 10px;
