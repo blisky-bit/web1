@@ -22,7 +22,7 @@
     max-width: 200px;
 }
 
-.other-photos-section .photo {
+.other-photos-section .photo img {
     width: 100% !important; /* !important 추가 */
     aspect-ratio: 3 / 4 !important; /* !important 추가 */
     object-fit: cover !important; /* !important 추가 */
