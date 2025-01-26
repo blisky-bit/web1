@@ -2627,10 +2627,17 @@ input, select, textarea {
                 display: inline-block;
                 position: relative;
             }
-        
+
                 .image img {
                     display: block;
+                    width: 100%;
+                    height: auto;
+                    max-width: 300px;
+                    aspect-ratio: 3 /4;
+                    object-fit: cover;
                 }
+        
+                
         
                 .image.left, .image.right {
                     max-width: 40%;
@@ -2638,6 +2645,8 @@ input, select, textarea {
         
                     .image.left img, .image.right img {
                         width: 100%;
+                        height: auto;
+                        max-width: 300px;
                     }
         
                 .image.left {
@@ -2662,9 +2671,7 @@ input, select, textarea {
                         margin-top: 0;
                     }
         
-                    .image.fit img {
-                        width: 100%;
-                    }
+                    
         
                 .image.main {
                     display: block;
@@ -2676,9 +2683,7 @@ input, select, textarea {
                         margin-top: 0;
                     }
         
-                    .image.main img {
-                        width: 100%;
-                    }
+                    
         
                 @media screen and (max-width: 736px) {
         
