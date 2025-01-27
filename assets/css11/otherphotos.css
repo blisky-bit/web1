@@ -3,36 +3,28 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;  /* 양 옆에 균등하게 배치 */
+    justify-content: space-between;
     padding: 20px;
 }
 
-img.image {
-    max-width: 100%;
-    height: auto;
-}
-
-/* 각 사진 항목에 고정된 너비 설정 */
 .photo-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 45%;  /* 두 이미지를 나란히 맞추기 위해 45%로 설정 */
+    max-width: 45%;  /* 각 항목을 45%로 설정하여 두 사진이 나란히 배치 */
     flex: 1 1 45%;   /* flex-grow, flex-shrink, flex-basis 설정 */
     text-align: center;
     margin: 10px;
 }
 
-/* photo 클래스에 적용되는 스타일 */
 .photo {
-    width: 100%;  /* 사진의 너비를 부모 항목에 맞게 설정 */
-    aspect-ratio: 3 / 4;  /* 가로 세로 비율 설정 */
-    object-fit: cover;  /* 사진이 영역을 채우도록 설정 */
-    border-radius: 10px;  /* 둥근 모서리 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* 그림자 효과 */
+    width: 100%;      /* 너비를 100%로 설정 */
+    aspect-ratio: 3 / 4; /* 가로 세로 비율 설정 */
+    object-fit: contain; /* 비율을 유지하면서 영역에 맞춰 설정 */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 캡션 스타일 */
 .photo-caption {
     font-size: 14px;
     color: #333;
@@ -40,11 +32,10 @@ img.image {
     line-height: 1.5;
 }
 
-/* 모바일에서의 작은 화면 크기 대비 설정 */
 @media screen and (max-width: 767px) {
     .photo-item {
-        max-width: 100%;  /* 모바일 화면에서 가로폭 100% */
-        flex-basis: 100%; /* flex-basis를 100%로 설정해 세로로 정렬 */
+        max-width: 100%;
+        flex-basis: 100%; /* 모바일 화면에서 100% 크기로 설정 */
     }
 }
 
