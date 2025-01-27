@@ -12,9 +12,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;  /* 고정 너비 설정 */
+    max-width: 500px;  /* 고정 너비 설정 */
     flex: 0 0 300px;   /* flex-grow, flex-shrink, flex-basis 설정 */
-    text-align: center;  /* 캡션 중앙 정렬 */
+    text-align: center;
+    margin: 10px;
+    width: 45%;/* 캡션 중앙 정렬 */
 }
 
 /* photo 클래스에 적용되는 스타일 */
