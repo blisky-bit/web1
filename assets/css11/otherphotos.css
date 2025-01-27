@@ -12,8 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;  /* 고정 너비 설정 */
-    flex: 0 0 200px;   /* flex-grow, flex-shrink, flex-basis 설정 */
+    max-width: 300px;  /* 고정 너비 설정 */
+    flex: 0 0 300px;   /* flex-grow, flex-shrink, flex-basis 설정 */
+    text-align: center;  /* 캡션 중앙 정렬 */
 }
 
 /* photo 클래스에 적용되는 스타일 */
@@ -23,6 +24,14 @@
     object-fit: cover;  /* 사진이 영역을 채우도록 설정 */
     border-radius: 10px;  /* 둥근 모서리 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* 그림자 효과 */
+}
+
+/* 캡션 스타일 */
+.photo-caption {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
 }
 
 /* 모바일에서의 작은 화면 크기 대비 설정 */
