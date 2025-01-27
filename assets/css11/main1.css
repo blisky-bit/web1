@@ -3758,7 +3758,7 @@ input, select, textarea {
                             -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
                             transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
                             display: block;
-                            font-size: 0.8rem;
+                            font-size: 1rem;
                             outline: none;
                             padding: 0 2rem;
                         }
@@ -3795,7 +3795,7 @@ input, select, textarea {
                 @media screen and (max-width: 980px) {
         
                     #nav {
-                        display: none;
+                        display: block;
                     }
         
                 }
