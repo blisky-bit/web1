@@ -3686,22 +3686,9 @@ input, select, textarea {
                     color: #18bfef; /* 호버 시 파란색으로 변경 */
                 }
 
+    
+                
         
-                #nav ul.divided li {
-                    border-top-color: #ffffff;
-                }
-        
-                #nav ul.icons li a.icon:hover:before {
-                    color: #18bfef;
-                }
-        
-                #nav ul.icons.alt li .icon:before {
-                    box-shadow: inset 0 0 0 2px #ffffff;
-                }
-        
-                #nav ul.icons.alt li a.icon:hover:before {
-                    box-shadow: inset 0 0 0 2px #18bfef;
-                }
         
                 #nav input, #nav select, #nav textarea {
                     color: #ffffff;
