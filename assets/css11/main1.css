@@ -3673,6 +3673,19 @@ input, select, textarea {
                 max-width: 72rem;
                 z-index: 2;
             }
+
+              
+                #nav ul.icons li a.icon {
+                    color: #ffffff; /* 기본 색: 흰색 */
+                    font-size: 1.5rem; /* 아이콘 크기 */
+                    transition: color 0.3s ease;
+                }
+
+                    /* 아이콘 호버 시 효과 */
+                #nav ul.icons li a.icon:hover {
+                    color: #18bfef; /* 호버 시 파란색으로 변경 */
+                }
+
         
                 #nav ul.divided li {
                     border-top-color: #ffffff;
