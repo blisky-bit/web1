@@ -7,6 +7,11 @@
     padding: 20px;
 }
 
+img.image {
+    max-width: 100%;
+    height: auto;
+}
+
 /* 각 사진 항목에 고정된 너비 설정 */
 .photo-item {
     display: flex;
