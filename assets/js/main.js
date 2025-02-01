@@ -170,6 +170,7 @@
                     breakpoints.on('>medium', function() {
 
                         // NavPanel -> Nav.
+			    console.log('Moving content to #nav:', $navContent);
                             $navContent.appendTo($nav);
 
                         // Flip icon classes.
@@ -181,6 +182,7 @@
                     breakpoints.on('>=medium', function() {
 
                         // Nav -> NavPanel.
+			    console.log('Moving content to #navPanelInner:', $navContent);
                             $navContent.appendTo($navPanelInner);
 
                         // Flip icon classes.
