@@ -167,29 +167,18 @@
                 // Move nav content on breakout change.
                     var $navContent = $nav.children();
 
-                    breakpoints.on('>medium', function() {
+		breakpoints.on('>medium', function() {
+   			// NavPanel -> Nav
+    			$navContent.appendTo($nav);
+    			$nav.find('.icons, .icon').removeClass('alt');
+		});
 
-                        // NavPanel -> Nav.
-			    console.log('Moving content to #nav:', $navContent);
-                            $navContent.appendTo($nav);
+		breakpoints.on('<=medium', function() {
+    			// Nav -> NavPanel
+    			$navContent.appendTo($navPanelInner);
+    			$navPanelInner.find('.icons, .icon').addClass('alt');
+		});
 
-                        // Flip icon classes.
-                            $nav.find('.icons, .icon')
-                                .removeClass('alt');
-
-                    });
-
-                    breakpoints.on('>=medium', function() {
-
-                        // Nav -> NavPanel.
-			    console.log('Moving content to #navPanelInner:', $navContent);
-                            $navContent.appendTo($navPanelInner);
-
-                        // Flip icon classes.
-                            $navPanelInner.find('.icons, .icon')
-                                .addClass('alt');
-
-                    });
 
                 // Hack: Disable transitions on WP.
                     if (browser.os == 'wp'
