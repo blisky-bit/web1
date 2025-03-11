@@ -3171,18 +3171,14 @@ input, select, textarea {
         /* Pagination */
         
             .pagination {
-                display: -moz-inline-flex;
-                display: -webkit-inline-flex;
-                display: -ms-inline-flex;
-                display: inline-flex;
-                -moz-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
+                display: flex;
                 user-select: none;
                 cursor: default;
                 list-style: none;
-                margin: 0 0 2rem 2px;
+                margin: 2rem auto;
                 padding: 0;
+                justify-content: center;
+                align-items: center;
             }
         
                 .pagination a, .pagination span {
