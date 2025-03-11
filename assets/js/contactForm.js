@@ -18,15 +18,37 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
 
-    // If you have a back-end endpoint, you can use fetch/AJAX here.
-    // For demonstration, we simulate a successful form submission with a delay.
-    setTimeout(function() {
-      // Show the success modal popup
-      successModal.style.display = 'block';
-      
-      // Optionally reset the form fields after submission
-      form.reset();
-    }, 500);
+    const formData = new FormData(form);
+
+    // Send the data to Formspree using fetch
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Show the success modal popup
+        successModal.style.display = 'block';
+        // Optionally, reset the form
+        form.reset();
+      } else {
+        response.json().then(data => {
+          if (data.errors) {
+            alert("There was an error: " + data.errors.map(error => error.message).join(", "));
+          } else {
+            alert("Oops! There was a problem submitting your form");
+          }
+        });
+      }
+    })
+    .catch(error => {
+      alert("Oops! There was a problem submitting your form");
+      console.error('Error:', error);
+    });
   });
 });
+
 
