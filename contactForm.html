@@ -45,19 +45,19 @@
   <!-- Contact Form -->
                 <footer id="footer">
                     <section>
-                        <form method="post" action="#">
+                        <form id="contactForm" method="post" action="https://formspree.io/f/xeoaqroj">
                             <div class="fields">
                                 <div class="field">
                                     <label for ="name">Name</label>
-                                    <input type="text" name="name" id="name" />
+                                    <input type="text" name="name" id="name" required />
                                 </div>
                                 <div class="field">
                                     <label for ="Email">Email</label>
-                                    <input type="text" name="Email" id="Email"  />
+                                    <input type="text" name="Email" id="Email" required/>
                                 </div>
                                 <div class="field">
                                     <label for ="message">Message</label>
-                                    <textarea name="message" id="message" rows="3"></textarea>
+                                    <textarea name="message" id="message" rows="3" required></textarea>
                                 </div>
                             </div>
                             <ul class="actions">
