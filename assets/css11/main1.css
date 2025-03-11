@@ -2951,17 +2951,17 @@ input, select, textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5em;
-  height: 2.5em;
+  width: 2.3em;
+  height: 2.3em;
   border-radius: 50%;
-  border: 1px solid #ccc;  /* adjust to match your theme */
+  border: 1px solid ##e3e3e3;  /* adjust to match your theme */
   color: #777;            /* icon color */
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   margin-right: 0.5em;    /* spacing between icons */
 }
 .icons a.custom-icon:hover {
-  background-color: #eee;
+  background-color: ##e3e3e3;
   color: #000;            /* icon color on hover */
 }
 .icons a.custom-icon svg {
