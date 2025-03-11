@@ -2947,6 +2947,28 @@ input, select, textarea {
             ul.icons li a.icon:hover:before {
                 box-shadow: inset 0 0 0 2px #18bfef;
             }
+.icons a.custom-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 1px solid #ccc;  /* adjust to match your theme */
+  color: #777;            /* icon color */
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 0.5em;    /* spacing between icons */
+}
+.icons a.custom-icon:hover {
+  background-color: #eee;
+  color: #000;            /* icon color on hover */
+}
+.icons a.custom-icon svg {
+  width: 1em;             /* size of the icon within the circle */
+  height: 1em;
+  fill: currentColor;     /* uses the link’s color */
+}
         
         /* Section/Article */
         
