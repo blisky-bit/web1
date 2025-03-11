@@ -1,25 +1,32 @@
-// server.js
-const express = require('express');
-const app = express();
-const path = require('path');
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+  const successModal = document.getElementById('successModal');
+  const closeModal = document.getElementById('closeModal');
 
-// For parsing form data
-app.use(express.urlencoded({ extended: true }));
+  // Close the modal when clicking on the "X" button
+  closeModal.addEventListener('click', function() {
+    successModal.style.display = 'none';
+  });
 
-app.post('/send-message', (req, res) => {
-  // Access form data
-  const { name, email, message } = req.body;
+  // Also close the modal when clicking outside the modal content
+  window.addEventListener('click', function(event) {
+    if (event.target === successModal) {
+      successModal.style.display = 'none';
+    }
+  });
 
-  // TODO: Actually send email or store data
-  // e.g., using nodemailer or any email API
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
 
-  // Return success JSON
-  return res.status(200).json({ message: 'Form submitted successfully' });
+    // If you have a back-end endpoint, you can use fetch/AJAX here.
+    // For demonstration, we simulate a successful form submission with a delay.
+    setTimeout(function() {
+      // Show the success modal popup
+      successModal.style.display = 'block';
+      
+      // Optionally reset the form fields after submission
+      form.reset();
+    }, 500);
+  });
 });
 
-// Serve your static files
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
-});
