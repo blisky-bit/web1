@@ -3194,7 +3194,7 @@ input, select, textarea {
                     height: 3rem;
                     letter-spacing: 0.075em;
                     line-height: calc(3rem - 4px);
-                    margin-left: -2px;
+                    margin-left: 0;
                     min-width: 3rem;
                     position: relative;
                     text-align: center;
