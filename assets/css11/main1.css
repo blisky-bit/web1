@@ -3345,6 +3345,26 @@ input, select, textarea {
                     }
         
                 }
+        /* tagline */
+                #tagline {
+  background: rgba(255, 255, 255, 0.175); /* Semi-opaque white */
+  width: calc(100% - 4rem);
+  max-width: 72rem;
+  margin: 0 auto;
+  height: auto; /* Adjust as needed */
+  line-height: 1.5rem;
+  padding: 1rem 2rem;
+  text-align: center; /* Center text horizontally */
+  /* If you want it pinned at the very top: */
+  position: relative;
+  z-index: 2; /* Make sure it’s above the nav if needed */
+}
+
+#tagline h1, #tagline p {
+    margin: 5;
+}
+
+
         
         /* Intro */
         
