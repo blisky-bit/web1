@@ -3356,12 +3356,13 @@ input, select, textarea {
   padding: 1rem 2rem;
   text-align: center; /* Center text horizontally */
   /* If you want it pinned at the very top: */
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 2; /* Make sure it’s above the nav if needed */
 }
 
 #tagline h1, #tagline p {
-    margin: 5;
+    margin: 5px;
 }
 
 
