@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
+    alert("Submit event triggered"); // <-- For debugging
 
     const formData = new FormData(form);
 
-    // Send the data to Formspree using fetch
     fetch(form.action, {
       method: 'POST',
       body: formData,
@@ -30,9 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .then(response => {
       if (response.ok) {
-        // Show the success modal popup
+        alert("Success response from Formspree"); // <-- For debugging
         successModal.style.display = 'block';
-        // Optionally, reset the form
         form.reset();
       } else {
         response.json().then(data => {
@@ -50,5 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 
 
