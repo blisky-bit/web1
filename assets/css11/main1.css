@@ -3372,29 +3372,42 @@ input, select, textarea {
         
         /* Intro */
         
+/* Intro */
+        
             #intro {
                 color: #ffffff;
                 padding: 8rem 4rem 6rem 4rem ;
+                -moz-align-items: ;
+                -webkit-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+                display: -moz-flex;
+                display: -webkit-flex;
+                display: -ms-flex;
                 display: flex;
+                -moz-flex-direction: column;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
                 flex-direction: column;
-                justify-content: center;
-                 align-items: flex-start;     /* align content to the left */
-  text-align: left;            /* left-align text */
-  transition: opacity 1s ease, transform 1s ease;
-  position: relative;
-  cursor: default;
-  z-index: 1;
-  min-height: 100vh;
-  /* Add your background image */
-  background: url('path/to/your-whale-image.jpg') center center / cover no-repeat;
-}
+                -moz-justify-content: -moz-flex-end;
+                -webkit-justify-content: -webkit-flex-end;
+                -ms-justify-content: -ms-flex-end;
+                justify-content: flex-end;
+                -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+                -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+                -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+                transition: opacity 1s ease, transform 1s ease;
+                position: relative;
+                cursor: default;
+                text-align: center;
+                z-index: 1;
+                min-height: 100vh;
+            }
         
-               /* Form elements and links within intro (if any) */
-#intro input,
-#intro select,
-#intro textarea {
-  color: #ffffff;
-}
+                #intro input, #intro select, #intro textarea {
+                    color: #ffffff;
+                }
+        
                 #intro a {
                     color: #ffffff;
                     border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -3405,13 +3418,13 @@ input, select, textarea {
                         color: #18bfef !important;
                     }
         
-                #intro strong,
-#intro b,
-#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
-  color: #ffffff;
-}
+                #intro strong, #intro b {
+                    color: #ffffff;
+                }
         
-               
+                #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
+                    color: #ffffff;
+                }
         
                 #intro blockquote {
                     border-left-color: #ffffff;
@@ -3464,36 +3477,109 @@ input, select, textarea {
                         }
         
                 #intro h1 {
-                    font-size: 2.5rem;
+                    font-size: 5rem;
                     line-height: 1;
-                    margin: 0;
                 }
         
                 #intro p {
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                     font-style: italic;
-                    margin-top: 0.5rem;
-                    
+                    margin-top: -0.25rem;
+                    text-align: center;
                 }
         
                 #intro + #header {
                     margin-top: -20rem;
                 }
         
-                  /* Transition effect when #intro is hidden */
-#intro.hidden {
-  pointer-events: none;
-  transform: translateY(2rem);
-  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Preload state */
-body.is-preload #intro {
-  transform: translateY(2rem);
-  opacity: 0;
-}
+                    #intro + #header .logo {
+                        -moz-transform: translateY(2rem);
+                        -webkit-transform: translateY(2rem);
+                        -ms-transform: translateY(2rem);
+                        transform: translateY(2rem);
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+        
+                #intro.hidden {
+                    pointer-events: none;
+                    -moz-transform: translateY(2rem);
+                    -webkit-transform: translateY(2rem);
+                    -ms-transform: translateY(2rem);
+                    transform: translateY(2rem);
+                    -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
+                    -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
+                    -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
+                    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+        
+                    #intro.hidden + #header .logo {
+                        -moz-transform: translateY(0);
+                        -webkit-transform: translateY(0);
+                        -ms-transform: translateY(0);
+                        transform: translateY(0);
+                        opacity: 1;
+                        visibility: visible;
+                    }
+        
+                body.is-preload #intro {
+                    -moz-transform: translateY(2rem);
+                    -webkit-transform: translateY(2rem);
+                    -ms-transform: translateY(2rem);
+                    transform: translateY(2rem);
+                    opacity: 0;
+                }
+        
+                    body.is-preload #intro:not(.hidden) + #header + #nav {
+                        -moz-transform: translateY(4rem);
+                        -webkit-transform: translateY(4rem);
+                        -ms-transform: translateY(4rem);
+                        transform: translateY(4rem);
+                        opacity: 0;
+                    }
+        
+                @media screen and (max-width: 980px) {
+        
+                    #intro {
+                        padding: 4rem 4rem 2rem 4rem ;
+                        min-height: 90vh;
+                    }
+        
+                        #intro p br {
+                            display: none;
+                        }
+        
+                        #intro + #header {
+                            margin-top: -14rem;
+                        }
+        
+                }
+        
+                @media screen and (max-width: 736px) {
+        
+                    #intro {
+                        padding: 3rem 2rem 1rem 2rem ;
+                        min-height: 80vh;
+                    }
+        
+                        #intro h1 {
+                            font-size: 3.25rem;
+                            line-height: 1.1;
+                            margin-bottom: 1rem;
+                        }
+        
+                        #intro p {
+                            font-size: 1rem;
+                            margin-top: 0rem;
+                        }
+        
+                        #intro .actions {
+                            display: none;
+                        }
+        
+                }
         
         /* Header */
         
