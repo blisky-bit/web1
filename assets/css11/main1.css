@@ -3355,7 +3355,7 @@ input, select, textarea {
   height: 4rem;            /* Match nav’s height if you want the same size */
   line-height: 4rem;
   position: fixed;         /* Pin it at the top, if desired */
-  top: 0;
+  top: 5px;
   z-index: 3; 
  
 #tagline h1, 
@@ -3403,6 +3403,10 @@ input, select, textarea {
                 z-index: 1;
                 min-height: 100vh;
             }
+
+                #intro {
+                    margin-top: 30px;
+                }
         
                 #intro input, #intro select, #intro textarea {
                     color: #ffffff;
@@ -3486,6 +3490,8 @@ input, select, textarea {
                     font-style: italic;
                     margin-top: -0.25rem;
                     text-align: center;
+                    position: relative;
+                    left: 30px;
                 }
         
                 #intro + #header {
