@@ -3354,7 +3354,7 @@ input, select, textarea {
             #intro {
                 color: #ffffff;
                 padding: 8rem 4rem 6rem 4rem ;
-                -moz-align-items: ;
+                -moz-align-items: center;
                 -webkit-align-items: center;
                 -ms-align-items: center;
                 align-items: center;
@@ -3465,8 +3465,7 @@ input, select, textarea {
                     font-style: italic;
                     margin-top: -0.25rem;
                     text-align: center;
-                    position: relative;
-                    left: 30px;
+                    
                 }
         
                 #intro + #header {
