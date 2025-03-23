@@ -11,14 +11,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 45%;  /* 각 항목을 45%로 설정하여 두 사진이 나란히 배치 */
-    flex: 1 1 45%;   /* flex-grow, flex-shrink, flex-basis 설정 */
+    max-width: 30%;  /* 각 항목을 45%로 설정하여 두 사진이 나란히 배치 */
+    flex: 1 1 30%;   /* flex-grow, flex-shrink, flex-basis 설정 */
     text-align: center;
     margin: 10px;
 }
 
 .photo {
     width: 100%;      /* 너비를 100%로 설정 */
+    max-width: 300px;
     aspect-ratio: 3 / 4; /* 가로 세로 비율 설정 */
     object-fit: contain; /* 비율을 유지하면서 영역에 맞춰 설정 */
     border-radius: 10px;
