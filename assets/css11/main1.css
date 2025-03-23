@@ -3345,33 +3345,9 @@ input, select, textarea {
                     }
         
                 }
-        /* tagline */
-                #tagline {
-  background: rgba(255, 255, 255, 0.2); /* Semi-opaque white */
-  width: 100%;
-  display: flex;
-  align-items: center;
-    justify-content: center; /* Horizontally center them */
-  height: 4rem;            /* Match nav’s height if you want the same size */
-  line-height: 4rem;
-  position: fixed;         /* Pin it at the top, if desired */
-  top: 0px;
-  z-index: 3; 
- 
-#tagline h1, 
-#tagline p {
-    margin: 0 1rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.075em;
-    font-weight: 900;
-    color: #fff;
-    top: 20px;
-}
-
 
         
-        /* Intro */
+
         
 /* Intro */
         
@@ -3405,9 +3381,7 @@ input, select, textarea {
                 min-height: 100vh;
             }
 
-                #intro {
-                    margin-top: 30px;
-                }
+               
         
                 #intro input, #intro select, #intro textarea {
                     color: #ffffff;
