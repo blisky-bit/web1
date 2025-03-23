@@ -13,15 +13,15 @@ function toggleFullStory(buttonId, contentId) {
 }
 // 각 버튼에 대해 클릭 이벤트 추가
 document.getElementById('full-story-btn-1').addEventListener('click', function() {
-    toggleFullStory('full-story-btn-1', 'full-story-content-1');
+    toggleFullStory('full-story-btn-1', 'full-story-content');
 });
 
 document.getElementById('full-story-btn-2').addEventListener('click', function() {
-    toggleFullStory('full-story-btn-2', 'full-story-content-2');
+    toggleFullStory('full-story-btn-2', 'full-story-content');
 });
 
 document.getElementById('full-story-btn-3').addEventListener('click', function() {
-    toggleFullStory('full-story-btn-3', 'full-story-content-3');
+    toggleFullStory('full-story-btn-3', 'full-story-content');
 });
 
 
