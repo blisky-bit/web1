@@ -2621,7 +2621,14 @@ input, select, textarea {
                 }
         
         /* Image */
-        
+
+            .image.main {
+                border: 0;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+            }
+                
             .image {
                 border: 0;
                 display: block;
